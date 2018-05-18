@@ -8,7 +8,8 @@ router.get('/person/:id', function(req, res, next) {
   let person = users.people.find(peep => {
     return peep.id === parseInt(req.params.id);
   });
-  res.render('index', { title: 'Express' });
+  // render the template with that object
+  res.render('index', { people });
 });
 
 module.exports = router;
