@@ -9,7 +9,7 @@ router.get('/person/:id', function(req, res, next) {
     return peep.id === parseInt(req.params.id);
   });
   // render the template with that object
-  res.render('index', { people });
+  res.render('index', { users });
 });
 
 module.exports = router;
