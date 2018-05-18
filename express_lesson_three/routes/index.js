@@ -3,7 +3,7 @@ var router = express.Router();
 var users = require('../models/users');
 
 /* GET home page. */
-router.get('/home', function(req, res, next) {
+router.get('/person/:id', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
